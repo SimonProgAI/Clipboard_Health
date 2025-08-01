@@ -117,6 +117,6 @@ async function fetchWorkPlaces() {
     return tempArr;
   };
 
-  return topActiveWorkPlaces(3, sortedActiveWorkPlacesArr);
+  console.log(JSON.stringify(topActiveWorkPlaces(3, sortedActiveWorkPlacesArr)));
 }
 fetchWorkPlaces();
