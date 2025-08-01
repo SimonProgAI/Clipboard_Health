@@ -113,7 +113,7 @@ async function fetchWorkPlaces() {
     for (let i = 0; i < num; i++) {
       tempArr.push(arr[i]);
     }
-    //console.log(tempArr);
+    console.log(tempArr);
     return tempArr;
   };
 
