@@ -10,7 +10,7 @@
 interface WorkPlace {
   id: number;
   name: string;
-  status: 0 | 1 | 2;
+  status?: 0 | 1 | 2 | undefined;
 }
 
 interface Shift {
@@ -25,7 +25,7 @@ interface Shift {
 interface TopWorkPlace {
   name: string;
   shifts: number;
-  status: 0 | 1 | 2;
+  status?: 0 | 1 | 2;
 }
 
 interface dataObj<T> {
@@ -94,8 +94,8 @@ async function fetchWorkPlaces() {
     if (sortedWoPlaceIdArr.includes(workPlacesData[i].id) && workPlacesData[i].status === 0) {
       tempTopWorkPlacesArr.push({
         name: workPlacesData[i].name,
-        shifts: shiftCounter(workPlacesData[i].id, sortedWoPlaceIdArr),
-        status: workPlacesData[i].status,
+        shifts: shiftCounter(workPlacesData[i].id, sortedWoPlaceIdArr)
+        // status: workPlacesData[i].status,
       });
     }
   }
