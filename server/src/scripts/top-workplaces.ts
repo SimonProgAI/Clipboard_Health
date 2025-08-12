@@ -1,12 +1,3 @@
-// I took longer than 90 minutes, but I think I implemented a good solution.
-// I welcome any feedback, positive or critical!
-
-/***AI DISCLAIMER***/
-// I use Copilot as a conversation partner and always instruct it to NOT show me code or a completed solution.
-// I use console.logs, the debugger and documentation to figure out how things work or why they don't work.
-// If I'm stuck, I discuss the issue with Copilot and ask for clues.
-// Copilot only wrote .vscode/launch.json for me, the rest of the code is mine.
-
 interface WorkPlace {
   id: number;
   name: string;
