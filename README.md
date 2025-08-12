@@ -1,6 +1,20 @@
 # Coding Challenge
 My solution:
 [Top Workplaces Script](server/src/scripts/top-workplaces.ts)
+
+Build a way to fetch the top 3 workplaces from our running app in production. More specifically, we want the currently active workplaces with the most shifts completed. 
+You can run this script by running npm run start:topWorkplaces in the root directory.
+Your task is to implement this script using the existing public web API for the app.
+The output of the script after running npm run start:topWorkplaces should be formatted like
+so:
+
+[
+ { name: "Martian Hydro", shifts: 10 },
+ { name: "Luna Greens", shifts: 7 },
+ { name: "Red Diamond Mines", shifts: 6 }
+]
+
+
 # Red Planet Staffing
 
 Welcome to the red planet! At just over one million people as of the 2050 census, Martian settlements are flourishing. As the leading staffing marketplace on Mars, Red Planet connects workplaces with workers to fill shifts.

@@ -25,7 +25,7 @@ interface dataObj<T> {
 }
 
 async function fetchWorkPlaces() {
-  // 1. Fetch work places data:
+// 1. Fetch work places data:
   const workPlacesURL: string = `http://localhost:3000/workplaces`;
   const shiftsURL: string = `http://localhost:3000/shifts`;
 
@@ -60,7 +60,7 @@ async function fetchWorkPlaces() {
   // console.log("shiftsData: ", shiftsData);
   // console.log("workPlacesData: ", workPlacesData);
 
-  // 2. Iterate over shiftsData to create an array of workplaceIds each time a shift is completed:
+// 2. Iterate over shiftsData to create an array of workplaceIds each time a shift is completed:
   let workplaceIdArr: number[] = [];
 
   for (let i = 0; i < shiftsData.length; i++) {
@@ -74,7 +74,7 @@ async function fetchWorkPlaces() {
   );
   //console.log(sortedWoPlaceIdArr);
 
-  // 3. Create a temporary array of active work places that includes the number of shifts completed:
+// 3. Create a temporary array of active work places that includes the number of shifts completed:
   let tempTopWorkPlacesArr: TopWorkPlace[] = [];
 
   for (let i = 0; i < workPlacesData.length; i++) {
@@ -92,13 +92,13 @@ async function fetchWorkPlaces() {
   }
   //console.log(tempTopWorkPlacesArr);
 
-  // 4. Sort tempTopWorkPlacesArr in decreasing order:
+// 4. Sort tempTopWorkPlacesArr in decreasing order:
   const sortedActiveWorkPlacesArr: TopWorkPlace[] = structuredClone(
     tempTopWorkPlacesArr.sort((a: TopWorkPlace, b: TopWorkPlace) => b.shifts - a.shifts),
   );
   //console.log(activeWorkPlaces)
 
-  // 5. Creat an array of the top 3 work places from sortedActiveWorkPlacesArr:
+// 5. Create an array of the top 3 work places from sortedActiveWorkPlacesArr:
   const topActiveWorkPlaces = (num: number, arr: TopWorkPlace[]): TopWorkPlace[] => {
     let tempArr: TopWorkPlace[] = [];
     for (let i = 0; i < num; i++) {
