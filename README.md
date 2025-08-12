@@ -4,19 +4,20 @@ Here is my solution to the coding challenge:
 
 I was asked to build a way to fetch the top 3 workplaces from a running app in production. More specifically, the currently active workplaces with the most shifts completed. 
 
-You can run this script by running **npm run start:topWorkplaces** in the root directory.
+You can run this script by running `npm run start:topWorkplaces` in the root directory.
 
 My task was to implement this script using the existing public web API for the app.
 
-The output of the script after running **npm run start:topWorkplaces** should be formatted like
+The output of the script after running `npm run start:topWorkplaces` should be formatted like
 so:
 
+```bash
 [
  { name: "Martian Hydro", shifts: 10 },
  { name: "Luna Greens", shifts: 7 },
  { name: "Red Diamond Mines", shifts: 6 }
 ]
-
+```
 
 # Red Planet Staffing
 
