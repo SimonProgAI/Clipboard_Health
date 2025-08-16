@@ -1,10 +1,10 @@
 # Coding Challenge
-Here is my solution to the coding challenge:
+My solution to the coding challenge:
 [Top Workplaces Script](server/src/scripts/top-workplaces.ts)
 
-I was asked to build a way to fetch the top 3 workplaces from a running app in production. More specifically, the currently active workplaces with the most shifts completed. 
+I was asked to to fetch the top 3 workplaces from a running app in production. More specifically, the currently active workplaces with the most shifts completed. 
 
-You can run this script by running `npm run start:topWorkplaces` in the root directory.
+Run this script by running `npm run start:topWorkplaces` in the root directory.
 
 My task was to implement this script using the existing public web API for the app.
 
