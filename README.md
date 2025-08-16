@@ -1,23 +1,41 @@
-# Coding Challenge
-My solution to the coding challenge:
-[Top Workplaces Script](server/src/scripts/top-workplaces.ts)
 
-I was asked to to fetch the top 3 workplaces from a running app in production. More specifically, the currently active workplaces with the most shifts completed. 
+# Coding Challenge Solution
 
-Run this script by running `npm run start:topWorkplaces` in the root directory.
+## Overview
+This repository contains my solution to the Red Planet Staffing coding challenge. The main objective was to fetch the top 3 currently active Martian workplaces with the most completed shifts using the app's public web API.
 
-My task was to implement this script using the existing public web API for the app.
+## Solution Script
+The implementation can be found in [`server/src/scripts/top-workplaces.ts`](server/src/scripts/top-workplaces.ts).
 
-The output of the script after running `npm run start:topWorkplaces` should be formatted like
-so:
+## How to Run
+To execute the script and view the results:
+
+1. Install dependencies:
+	```sh
+	npm install
+	```
+
+2. Run the script:
+	 ```sh
+	 npm run start:topWorkplaces
+	 ```
+
+For instructions on running the client and server applications, please refer to:
+- [Server Setup & Usage](./server/README.md)
+- [Client Setup & Usage](./client/README.md)
+
+## Expected Output
+The script will output the top 3 workplaces in the following format:
 
 ```bash
 [
- { name: "Martian Hydro", shifts: 10 },
- { name: "Luna Greens", shifts: 7 },
- { name: "Red Diamond Mines", shifts: 6 }
+	{ name: "Martian Hydro", shifts: 10 },
+	{ name: "Luna Greens", shifts: 7 },
+	{ name: "Red Diamond Mines", shifts: 6 }
 ]
 ```
+
+---
 
 # Red Planet Staffing
 
@@ -33,8 +51,8 @@ When they need a worker, workplaces post a "shift" on our marketplace. Workers o
 
 ## Documentation
 
-- [Server](./server/README.md)
-- [Client](./client/README.md)
+- [Server Setup & Usage](./server/README.md)
+- [Client Setup & Usage](./client/README.md)
 
 ## Submission
 
